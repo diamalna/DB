@@ -9,7 +9,7 @@ public class Main {
         try {
             Connection connection = DriverManager.getConnection(url, login, password);
             Statement statement = connection.createStatement();
-            ResultSet result = statement.executeQuery("select * from students");
+            ResultSet result = statement.executeQuery("SELECT * FROM students");
 
             while (result.next()) {
                 System.out.println(result.getInt("id") + "\t"
